@@ -23,8 +23,8 @@ public class InitialController {
         return "Hello Gradle!";
     }
 
-    //@GetMapping("/")
-    //public String helloWorld() { return "HELLO WORLD"; }
+    @GetMapping("/")
+    public String helloWorld() { return "HELLO WORLD"; }
 
     @RequestMapping(path="/{NOM}")
     public String helloWorld(@PathVariable("NOM") String name) {
